@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true, // Используем ES2021 (или другую нужную версию)
+    "node": true
+  },
+  "parser": "@babel/eslint-parser", // Используем Babel для парсинга современного синтаксиса
+  "parserOptions": {
+    "requireConfigFile": false, // Не требует файл конфигурации Babel
+    "ecmaVersion": 2021, // Поддержка последних стандартов ECMAScript
+    "sourceType": "module" // Разрешает использование import/export
+  },
+  "extends": [
+    "eslint:recommended" // Базовые рекомендации ESLint
+  ],
+  "rules": {
+    "no-console": "off" // Например, выключаем предупреждения для console.log
+  }
+}
